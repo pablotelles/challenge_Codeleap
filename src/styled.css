@@ -1,0 +1,14 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+body{
+    width: 800px;
+    margin: 0 auto;
+    background: #E5E5E5;
+}
+main {
+  background-color: white;
+  padding-bottom: 0.5px;
+
+}
