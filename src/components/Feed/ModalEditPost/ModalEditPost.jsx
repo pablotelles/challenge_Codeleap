@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ContainerModal, Background } from './styled'
+import { ContainerModal, BackgorundModal } from './styled'
 import { Button, Input, TextArea, Title, TitleLabel } from '../../../UI/commons'
 import { upDatePost } from '../../../api/conections/upDatePost'
 import { postEditStore } from '../../../redux/store/postEditStore'
@@ -20,7 +20,7 @@ const ModalEditPost = () => {
 
   if (modal) {
     return (
-    <Background>
+      <BackgorundModal>
       <ContainerModal>
         <div style={{
           display: 'flex',
@@ -70,7 +70,7 @@ const ModalEditPost = () => {
           }
         >SAVE</Button>
       </ContainerModal>
-    </Background>
+      </BackgorundModal>
     )
   }
 }
