@@ -1,16 +1,10 @@
 import styled from 'styled-components'
 
 export const Title = styled.h2`
-    font-style: normal;
- 
-    font-size: 22px;
- 
+    font-style: normal; 
+    font-size: 22px; 
     padding-top: 23px;
     padding-bottom: 15px;
-
-    @media (max-width: 900px) {
-      font-size: 34px;
-    }
 `
 export const Button = styled.button`
     Width: 111px;
