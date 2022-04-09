@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { ContainerModal } from './styled'
 import { Button, Input, TextArea, Title, TitleLabel } from '../../../UI/commons'
-import { upDatePost } from '../../../api/CRUD/upDatePost'
+import { upDatePost } from '../../../api/conections/upDatePost'
 import { postEditStore } from '../../../redux/store/postEditStore'
+import { GrClose as CloseIcon } from 'react-icons/gr'
 
-const ModalPostForm = () => {
+const ModalEditPost = () => {
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
 
@@ -20,7 +21,17 @@ const ModalPostForm = () => {
   if (modal) {
     return (
     <ContainerModal>
-      <Title>Edit Item</Title>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        cursor: 'pointer'
+      }} >
+        <Title>Edit Item</Title>
+        <CloseIcon
+        onClick={() => setModal(false)}
+        />
+      </div>
       <TitleLabel htmlFor="title">Title</TitleLabel>
       <Input
         type="text"
@@ -62,4 +73,4 @@ const ModalPostForm = () => {
   }
 }
 
-export default ModalPostForm
+export default ModalEditPost

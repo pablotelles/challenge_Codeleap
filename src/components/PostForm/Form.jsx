@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
-import { PostForm, Container } from './styled'
+import { PostForm, Container, PostContainerForm } from './styled'
 import { Title, Input, Button, TextArea, TitleLabel } from '../../UI/commons'
-import { addPost } from '../../api/CRUD/addPost'
-import { userStore } from '../../redux/store'
+import { addPost } from '../../api/conections/addPost'
+import { userStore } from '../../redux/store/userStore'
 
 const Form = () => {
   const [titlePost, setTitlePost] = useState('')
   const [content, setContent] = useState('')
   const userName = userStore.getState().name
   return (
+      <PostContainerForm>
         <PostForm>
             <Title>{"What's on your mind?"}</Title>
             <Container>
@@ -54,6 +55,7 @@ const Form = () => {
                 >CREATE</Button>
             </Container>
         </PostForm>
+        </PostContainerForm>
   )
 }
 export default Form

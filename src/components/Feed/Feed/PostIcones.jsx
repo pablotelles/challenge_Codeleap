@@ -1,8 +1,8 @@
 import React from 'react'
 import iconDelete from '../../../assets/icons/delete.png'
 import iconUpdate from '../../../assets/icons/update.png'
-import { deletePost } from '../../../api/CRUD/deletePost'
-import { userStore } from '../../../redux/store'
+import { deletePost } from '../../../api/conections/deletePost'
+import { userStore } from '../../../redux/store/userStore'
 import { editPostActions } from '../../../redux/actions/postEditActions'
 import { postEditStore } from '../../../redux/store/postEditStore'
 

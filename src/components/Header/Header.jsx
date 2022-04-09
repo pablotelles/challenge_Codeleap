@@ -1,6 +1,6 @@
 import React from 'react'
 import { HeaderSlyled, Title, UserInfo } from './styled'
-import { userStore } from '../../redux/store'
+import { userStore } from '../../redux/store/userStore'
 import { handlerLogout } from '../../pages/Login/handlerLogout'
 const Header = () => {
   const user = userStore.getState()

@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const FeedList = styled.section`
-  width: 723px;
-  margin: 35px auto;`
+  max-width: 723px;
+  margin: 35px auto;
+  `
 export const FeedItem = styled.section`
   box-sizing: border-box;
   margin-bottom: 45px;
