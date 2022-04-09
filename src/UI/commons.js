@@ -15,6 +15,7 @@ export const Button = styled.button`
     font-size: 22px;
     line-height: 26px;
     align-self: flex-end;
+    cursor: pointer;
 
     font-size: 16px;
     line-height: 19px;
@@ -24,6 +25,7 @@ export const Button = styled.button`
 `
 export const Input = styled.input`
     Height: 28px;
+    max-width: 659px;
     background: #FFFFFF;
     border: 1px solid #777777;
     box-sizing: border-box;
@@ -35,6 +37,10 @@ export const TextArea = styled.textarea`
     top: 302px;
     margin-bottom: 34px;
     resize: none;
+    max-width: 659px;
+    left: 628px;
+
+
     
     background: #FFFFFF;
     border: 1px solid #777777;

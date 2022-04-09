@@ -1,26 +1,18 @@
-import React, { useEffect, useState } from 'react'
-import api from '../../../api/apiBase'
+import React, { useState } from 'react'
 import { HeaderPosts, FeedList, FeedItem, ContentPosts, UserPost, ContentInfos, ContentText } from './styled'
 import PostDateCreate from './PostDateCreate'
 import { PostIcons } from './PostIcones'
 import { Loader } from '../../Loader/Loader'
-import ModalPostForm from '../ModalPostForm/ModalPostForm'
+import ModalEditPost from '../ModalEditPost/ModalEditPost'
+import { getPosts } from '../../../api/conections/getPosts'
 
 function Feed () {
   const [data, setData] = useState([])
+  getPosts(setData)
 
-  useEffect(() => {
-    api.get('?format=json')
-      .then(({ data }) => {
-        setData([...data.results])
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
-  }, [])
   return (
     <FeedList>
-      <ModalPostForm />
+      <ModalEditPost />
       {data.map(item => {
         return (
           <FeedItem key={item.id}>
