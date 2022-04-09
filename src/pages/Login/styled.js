@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
 export const Form = styled.form`
-width: 500px;
-margin: 200px auto;
-padding: 32px 28px;
-background: #FFFFFF;
-border: 1px solid #CCCCCC;
-box-sizing: border-box
+  max-width: 500px;
+  margin: 200px auto;
+  padding: 32px 28px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box
+
+    @media (min-width: 900px) {
+      margin: 500px 10px;
+    }
 `
 
 export const Title = styled.h1`
@@ -20,13 +24,4 @@ export const Title = styled.h1`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-`
-export const UserName = styled.input`
-  width: 444px;
-  height: 28px;
-  margin: 14px 0;
-
-  border: 1px solid #777777;
-  box-sizing: border-box;
-  border-radius: 4px;
 `
