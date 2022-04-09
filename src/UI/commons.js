@@ -2,11 +2,15 @@ import styled from 'styled-components'
 
 export const Title = styled.h2`
     font-style: normal;
-    font-weight: 700;
+ 
     font-size: 22px;
-    line-height: 26px;
+ 
     padding-top: 23px;
     padding-bottom: 15px;
+
+    @media (max-width: 900px) {
+      font-size: 34px;
+    }
 `
 export const Button = styled.button`
     Width: 111px;
@@ -39,9 +43,7 @@ export const TextArea = styled.textarea`
     resize: none;
     max-width: 659px;
     left: 628px;
-
-
-    
+  
     background: #FFFFFF;
     border: 1px solid #777777;
     box-sizing: border-box;
