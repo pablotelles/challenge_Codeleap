@@ -21,11 +21,10 @@ export const PostForm = styled.form`
     border: 1px solid #999999;
     box-sizing: border-box;
       @media (max-width: 900px) {
-        min-height: 380px;  
+        min-height: 400px;
       }
 `
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-
 `

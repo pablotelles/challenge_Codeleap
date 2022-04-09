@@ -23,5 +23,6 @@ main {
   main{
     padding: 0 10px;
     overflow-x: hidden;
+    align-self: center;
  }
 }   
